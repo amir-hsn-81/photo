@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { ImageType } from '../types';
 
@@ -26,12 +25,12 @@ const Modal: React.FC<ModalProps> = ({ image, onClose }) => {
       onClick={onClose}
     >
       <div
-        className="relative bg-slate-800 rounded-lg shadow-2xl shadow-gold-950/50 max-w-4xl w-11/12 max-h-[90vh] flex flex-col p-4 animate-scaleUp"
+        className="relative bg-slate-800 rounded-lg shadow-2xl shadow-azure-950/50 max-w-4xl w-11/12 max-h-[90vh] flex flex-col p-4 animate-scaleUp"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={onClose}
-          className="absolute -top-4 -right-4 h-10 w-10 bg-gold-600 text-slate-900 rounded-full flex items-center justify-center text-2xl font-bold hover:bg-gold-500 transition-colors duration-300 z-10 focus:outline-none focus:ring-2 focus:ring-gold-300"
+          className="absolute -top-4 -right-4 h-10 w-10 bg-azure-600 text-slate-900 rounded-full flex items-center justify-center text-2xl font-bold hover:bg-azure-500 transition-colors duration-300 z-10 focus:outline-none focus:ring-2 focus:ring-azure-300"
           aria-label="Close image view"
         >
           &times;
@@ -44,7 +43,7 @@ const Modal: React.FC<ModalProps> = ({ image, onClose }) => {
           />
         </div>
         <div className="pt-4 text-center">
-          <p className="text-xl text-gold-200">
+          <p className="text-xl text-azure-200">
             By <span className="font-bold">{image.author}</span>
           </p>
         </div>

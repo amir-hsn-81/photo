@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { ImageType } from './types';
 import Header from './components/Header';
@@ -43,11 +42,11 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 text-gold-100 font-inter flex flex-col">
+    <div className="min-h-screen bg-slate-900 text-azure-100 font-inter flex flex-col">
       <Header />
       <main className="flex-grow container mx-auto px-4 py-8">
-        <h1 className="text-4xl md:text-5xl font-cinzel font-bold text-center text-gold-300 mb-8 tracking-wider">
-          Golden Gallery
+        <h1 className="text-4xl md:text-5xl font-cinzel font-bold text-center text-azure-300 mb-8 tracking-wider">
+          Azure Gallery
         </h1>
         {isLoading ? (
           <div className="flex justify-center items-center h-96">
